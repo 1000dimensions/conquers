@@ -1,0 +1,9 @@
+body {
+	background: #fff;
+	text-align: center;
+	font-family: Arial
+}
+#map {
+	border: 10px solid #964B00;
+	outline: 10px solid #964B00;
+}

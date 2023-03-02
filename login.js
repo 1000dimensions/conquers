@@ -3,10 +3,9 @@ const pass = document.getElementById('pass').value;
 const uName = document.getElementById('Uname').value;
 var user = new Parse.Query("User");
 function retreiveU(){
-    if(uName != ""){   
-        const query = new.Parse.Query('User');
+    if(uName != ""){  
         try {
-            const uname = await query.get(uName);
+            const uname = await user.get(uName);
         }catch(err){
             throw err + "You got an error!"
         }

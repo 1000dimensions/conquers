@@ -9,6 +9,7 @@ function retreiveU(){
             const Pas = await user.get(Pass);
             if(pass != Pas) {
                 wrong();
+            }
         }catch(err){
             throw err + "You got an error!"
         }
@@ -16,3 +17,4 @@ function retreiveU(){
 }
 function wrong() {
     document.getElementById('Pass').innerHTML = "Wrong Password!";
+}

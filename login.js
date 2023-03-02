@@ -6,15 +6,17 @@ function retreiveU(){
     if(uName != ""){  
         try {
             const uname = await user.get(Uname);
+	    alert(uname);
             const Pas = await user.get(Pass);
+	    alert(Pas)
             if(pass != Pas) {
                 wrong();
             }
         }catch(err){
-            throw err + "You got an error!"
+           alert(err + "You got an error!")
         }
     }
 }
 function wrong() {
-    document.getElementById('Pass').innerHTML = "Wrong Password!";
+    alert("Wrong Password!");
 }

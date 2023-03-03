@@ -5,9 +5,9 @@ var user = new Parse.Query("log");
 function retreiveU(){
     if(uName != ""){  
         try {
-            const uname = await user.get('Uname');
+            const uname = user.get('Uname');
 	    alert(uname);
-            const Pas = await user.get('Pass');
+            const Pas = user.get('Pass');
 	    alert(Pas);
             if(pass !==Pas) {
                 wrong();

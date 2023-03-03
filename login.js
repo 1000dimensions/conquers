@@ -2,12 +2,12 @@ const bogga = document.getElementById('ogga');
 const pass = document.getElementById('pass').value;
 const uName = document.getElementById('Uname').value;
 var user = new Parse.Query("log");
-function retreiveU(){
+async function retreiveU(){
     if(uName != ""){  
         try {
-            const uname = user.get('Uname');
+            const uname = await user.get('Uname');
 	    alert(uname);
-            const Pas = user.get('Pass');
+            const Pas = await user.get('Pass');
 	    alert(Pas);
             if(pass !==Pas) {
                 wrong();

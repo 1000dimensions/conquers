@@ -6,8 +6,10 @@ async function retreiveU(){
     if(uName != ""){  
         try {
             login = Parse.User
-		    .logIn(uName, pass).then(function(login));
-            }
+		    .logIn(uName, pass).then(function(login){
+		    console.log("Logged in!");
+		    
+            });
         }catch(error){
            alert(error + "You got an error!");
         }

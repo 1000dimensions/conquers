@@ -8,12 +8,12 @@ function retreiveU(){
             const uname = await user.get('Uname');
 	    alert(uname);
             const Pas = await user.get('Pass');
-	    alert(Pas)
-            if(pass != Pas) {
+	    alert(Pas);
+            if(pass !==Pas) {
                 wrong();
             }
-        }catch(err){
-           alert(err + "You got an error!")
+        }catch(error){
+           alert(error + "You got an error!");
         }
     }
 }

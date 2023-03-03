@@ -5,12 +5,8 @@ var user = new Parse.Query("log");
 async function retreiveU(){
     if(uName != ""){  
         try {
-            const uname = await user.get(uName);
-	    alert(uname);
-            const Pas = await uname.get('Pass');
-	    alert(Pas);
-            if(pass !== Pas) {
-                wrong();
+            login = Parse.User
+		    .logIn(uName, pass).then(function(login));
             }
         }catch(error){
            alert(error + "You got an error!");

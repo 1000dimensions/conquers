@@ -1,4 +1,4 @@
-const cbg = document.querySelector('#map');
+const cbg = document.querySelector('map');
 const ctx = cbg.getContext('2d');
 ctx.fillstyle("green");
 ctx.fillRect(0, 0, cbg.height, cbg.width);

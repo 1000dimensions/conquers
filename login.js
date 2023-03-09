@@ -4,7 +4,7 @@ const uName = document.getElementById('name').value;
 async function logn(){
    try{
       Parse.User.logIn(this.uName, this.pass).then((resp) => {
-         alet("login Successful", resp);
+         alert("login Successful", resp);
    });
    }catch(err){
       alert(err + "You got an error!");

@@ -10,7 +10,7 @@ alert(min);
 alert(days);
 alert(hours);
 
-const button = document.createElement("button");
+const button = document.createElement('button');
 button.id = "ton";
 button.innerText = "Click.";
 button.onclick = set; 

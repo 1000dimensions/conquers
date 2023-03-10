@@ -14,7 +14,8 @@ const button = document.createElement('button');
 button.id = "ton";
 button.innerText = "Click.";
 button.onclick = set; 
-const t = new Parse.Object("Time")
+const t = new Parse.Object("Time");
+
 async function set {
   t.set("userTime", "N/A");
   t.set("timeFloat", days);

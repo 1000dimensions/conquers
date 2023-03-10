@@ -10,6 +10,10 @@ alert(min);
 alert(days);
 alert(hours);
 
+const button = document.createElement("button");
+button.id = "ton";
+button.innerText = "Click.";
+button.onclick = set; 
 const t = new Parse.Object("Time")
 async function set {
   t.set("userTime", "N/A");
